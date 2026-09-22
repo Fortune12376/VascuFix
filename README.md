@@ -216,12 +216,12 @@ print(q_max, t_max)
 
 For the fitted vessel centerline $c(t)$,
 
-$$
+```math
 \kappa(t)
 =
 \frac{\|c'(t)\times c''(t)\|}
      {\|c'(t)\|^3}.
-$$
+```
 
 VascuFix defines
 
@@ -245,7 +245,7 @@ $$
 
 Let $c_0(t)$ and $r_0(t)$ denote the original VascularMD reconstruction. For a repair interval $I$, VascuFix minimizes
 
-$$
+```math
 J
 =
 \frac{1}{L_I}
@@ -257,7 +257,7 @@ J
      {\rho^2}
 \right]
 \,ds_0,
-$$
+```
 
 where the default relative radius/spatial uncertainty is
 
@@ -297,7 +297,7 @@ Candidates that fail the continuous physical admissibility test are discarded.
 
 Among physically admissible candidates, VascuFix balances preservation of the original vessel against the number of free repair variables using
 
-$$
+```math
 \mathrm{RIC}_k
 =
 m_I
@@ -306,7 +306,7 @@ m_I
 \right)
 +
 2p_k,
-$$
+```
 
 where
 
