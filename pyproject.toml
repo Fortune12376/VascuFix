@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vascufix"
+version = "0.1.0"
+description = "Local curvature-admissibility repair for VascularMD cerebral arterial models"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "GPL-3.0-only" }
+authors = [
+  { name = "YOUR NAME" }
+]
+keywords = [
+  "vascular",
+  "VascularMD",
+  "B-spline",
+  "curvature",
+  "meshing",
+  "cerebral arteries",
+  "CFD"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering"
+]
+dependencies = [
+  "numpy>=1.23",
+  "scipy>=1.9"
+]
+
+[project.urls]
+Homepage = "https://github.com/<YOUR_USERNAME>/VascuFix"
+Repository = "https://github.com/<YOUR_USERNAME>/VascuFix"
+Issues = "https://github.com/<YOUR_USERNAME>/VascuFix/issues"
+
+[tool.setuptools]
+py-modules = ["vascufix"]
